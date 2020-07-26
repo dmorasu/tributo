@@ -1,0 +1,19 @@
+body{
+    font-family: 'Alegreya',sans-serif;
+    background-color: rgb(192, 191, 189);
+    display: grid;
+}
+h1{
+    font-family: 'Alegreya',sans-serif;
+    align-content: center;
+}
+header{
+    display: flex;
+    justify-content: center;
+    grid-area: cabeza;
+}
+
+#bloque_imagen{
+    display: grid;
+    justify-content: center;
+}
