@@ -1,19 +1,52 @@
 body{
     font-family: 'Alegreya',sans-serif;
-    background-color: rgb(192, 191, 189);
+    background-color: rgb(204, 198, 185);
     display: grid;
-}
-h1{
-    font-family: 'Alegreya',sans-serif;
-    align-content: center;
-}
-header{
-    display: flex;
-    justify-content: center;
-    grid-area: cabeza;
+    grid-template-areas:    "header"
+                            "main";
+    gap: 8px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 15% 90%;
+    
 }
 
-#bloque_imagen{
+header{
+    font-family: 'Alegreya',sans-serif;
+    display: grid;
+    grid-area: header;
+    text-align: center;
+    background-color: aliceblue;
+    
+    
+}
+
+
+main{
+   
+    grid-area: main;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10% 70%;
+    grid-template-areas:  "contenedor1"
+                          "contenedor2"  ;
+            
+}
+h2{
+    text-align: center;
+}
+
+
+#contenedor1{
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    grid-area: contenedor1;
+
+}
+
+#contenedor2{
     display: grid;
     justify-content: center;
+    text-align: justify;
+    grid-area: contenedor2;
+
 }
