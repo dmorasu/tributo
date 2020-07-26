@@ -12,6 +12,8 @@ body{
 
 #parrafoinicial{
     font-size: 20px;
+    text-align: center;
+    
 }
 
 header{
@@ -19,8 +21,8 @@ header{
     display: grid;
     grid-area: header;
     text-align: center;
-    
     font-size: 50px;
+    justify-content: center;
     
     
 }
@@ -29,6 +31,7 @@ header{
 main{
     display: grid;
     margin: 3%;
+    padding: 5%;
     grid-template-areas: "contenedor1 contenedor1 contenedor1"
                          "izquierda contenedor2 derecha" ;
     grid-template-columns: 5% 90% 5%;
@@ -41,20 +44,24 @@ h2{
     text-align: center;
 }
 
+ul { 
+    list-style-type: square;
+}
 
 #contenedor1{
     display: flex;
-    
+    padding: 8%;
+    background-color: cornsilk;
     justify-content: center;
     text-align: justify;
     grid-area: contenedor1;
-    background-color: #f0f8ff;
+    
 
 }
 
 #contenedor2{
     display: grid;
-    padding: 8%;
+    
     /*justify-content: center;*/
     text-align: justify;
     grid-area: contenedor2;
@@ -67,6 +74,7 @@ h2{
     /*justify-content: left;*/
     padding: 2%;
     grid-area: izquierda;
+  
     
     
 }
@@ -77,6 +85,7 @@ h2{
     /*justify-content: right;*/
     
     grid-area: derecha;
+    
     
     
 }
