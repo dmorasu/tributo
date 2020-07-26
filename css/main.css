@@ -6,8 +6,12 @@ body{
                             "main";
     gap: 8px;
     grid-template-columns: 1fr;
-    grid-template-rows: 15% 90%;
+    grid-template-rows: 20% 90%;
     
+}
+
+#parrafoinicial{
+    font-size: 20px;
 }
 
 header{
@@ -15,7 +19,8 @@ header{
     display: grid;
     grid-area: header;
     text-align: center;
-    background-color: aliceblue;
+    
+    font-size: 50px;
     
     
 }
@@ -40,6 +45,7 @@ h2{
     justify-content: center;
     text-align: justify;
     grid-area: contenedor1;
+    background-color: #f0f8ff;
 
 }
 
