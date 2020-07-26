@@ -27,12 +27,14 @@ header{
 
 
 main{
-   
-    grid-area: main;
-    grid-template-columns: 1fr;
-    grid-template-rows: 10% 70%;
-    grid-template-areas:  "contenedor1"
-                          "contenedor2"  ;
+    display: grid;
+    margin: 3%;
+    grid-template-areas: "contenedor1 contenedor1 contenedor1"
+                         "izquierda contenedor2 derecha" ;
+    grid-template-columns: 5% 90% 5%;
+    grid-template-rows: 30% 70%;
+    
+
             
 }
 h2{
@@ -42,6 +44,7 @@ h2{
 
 #contenedor1{
     display: flex;
+    
     justify-content: center;
     text-align: justify;
     grid-area: contenedor1;
@@ -51,8 +54,29 @@ h2{
 
 #contenedor2{
     display: grid;
-    justify-content: center;
+    padding: 8%;
+    /*justify-content: center;*/
     text-align: justify;
     grid-area: contenedor2;
+    
 
+}
+
+#izquierda{
+    display: flex;
+    /*justify-content: left;*/
+    padding: 2%;
+    grid-area: izquierda;
+    
+    
+}
+
+#derecha{
+    display: grid;
+    padding: 2%;
+    /*justify-content: right;*/
+    
+    grid-area: derecha;
+    
+    
 }
